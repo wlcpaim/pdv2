@@ -1,0 +1,30 @@
+/* Design Tokens - WLC.IA SMART POS */
+:root {
+  /* Cores */
+  --bg-app: #121214;
+  --bg-card: #1f1f23;
+  --text-main: #e1e1e6;
+  --text-muted: #a8a8b3;
+  --brand-green: #04d361;
+  --brand-red: #f75a68;
+  --brand-blue: #3b82f6;
+  --brand-purple: #8b5cf6;
+
+  /* Espaçamento */
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+
+  /* Bordas */
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-app);
+  color: var(--text-main);
+}
