@@ -8,29 +8,20 @@
 </head>
 <body>
   <div id="app" style="display: flex; min-height: 100vh;">
-    <aside style="width: 260px; background: var(--bg-card); padding: var(--space-24);">
-      <h1 style="font-size: 1.5rem; color: var(--brand-purple);">WLC.IA</h1>
+    <aside style="width: 260px; background: var(--bg-card); padding: var(--space-24); border-right: 1px solid var(--border);">
+      <h1 style="font-size: 1.5rem; color: var(--color-accent);">WLC.IA</h1>
       <nav style="margin-top: var(--space-32);">
         <ul style="list-style: none; padding: 0;">
-          <li>Dashboard</li>
-          <li>PDV</li>
-          <li>Produtos</li>
-          <li>Financeiro</li>
+          <li><a href="#dashboard" style="text-decoration: none; color: var(--color-text);">Dashboard</a></li>
+          <li><a href="#pdv" style="text-decoration: none; color: var(--color-text);">PDV</a></li>
+          <li><a href="#produtos" style="text-decoration: none; color: var(--color-text);">Produtos</a></li>
         </ul>
       </nav>
     </aside>
-    <main style="flex: 1; padding: var(--space-32);">
-      <header>
-        <h2>Dashboard Executivo</h2>
-      </header>
-      <section style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-16); margin-top: var(--space-24);">
-        <div style="background: var(--bg-card); padding: var(--space-16); border-radius: var(--radius-md);">
-          <p style="color: var(--text-muted);">Faturamento Hoje</p>
-          <h3 style="font-size: 1.5rem;">R$ 0,00</h3>
-        </div>
-        <!-- Outros cards -->
-      </section>
+    <main id="app-main" style="flex: 1; padding: var(--space-32);">
+      <!-- Conteúdo dinâmico será injetado aqui -->
     </main>
   </div>
+  <script src="js/app.js"></script>
 </body>
 </html>
